@@ -10,11 +10,11 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #FFBAE7;
+    background-color: rgba(35, 35, 35, 0.959);
 }
 
 .navbar {
-    background-color: #F96DAA;
+    background-color: rgba(0, 0, 0, 0.581);
     color: white;
     display: flex;
     justify-content: space-between;
@@ -30,6 +30,7 @@ body {
 .navbar-logo {
     display: flex;
     align-items: center;
+    color: red;
 }
 
 .navbar-logo img {
@@ -58,7 +59,7 @@ body {
 
 .navbar-toggle {
     display: none;
-    color: black;
+    color: white;
     transition: all 0.75s ease-in-out;
 }
 
@@ -108,12 +109,14 @@ body {
     font-size: 15px;
     font-family: sans-serif;
     font-weight: 300;
+    background-color: black;
+    color: white;
 }
 
 .container .searchbar button {
     height: 50px;
     width: 100px;
-    background-color: #F96DAA;
+    background-color: rgb(81, 78, 78);
     border: none;
     border-radius: 20px;
     font-size: 20px;
@@ -143,7 +146,7 @@ body {
 }
 
 .playlistcard .playlists {
-    background-color: #F96DAA;
+    background-color: black;
     width: 300px;
     height: 300px;
     border-radius: 20px;
@@ -179,7 +182,7 @@ audio {
 .footer {
     height: 100%;
     width: 100%;
-    background-color: #F96DAA;
+    background-color: black;
     margin-top: 100px;
 }
 
@@ -196,5 +199,80 @@ audio {
 
 .footer .image img {
     height: 200px;
+    margin-top: 100px;
+}
+
+
+/* localmp3 */
+
+
+/* .localmp3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+.localmp3 .boxes{
+    background-color: rgb(81, 78, 78);
+    height: 200px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+.localmp3 .boxes .box1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    width: 150px;
+    background-color: black;
+    border-radius: 20px;
+}
+.localmp3 .boxes .box1 img{
+    height: 70px;
+    border-radius: 20px;
+
+} */
+
+.singers {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    gap: 30px;
+    overflow: scroll;
+}
+
+.singers::-webkit-scrollbar {
+    height: 100%;
+    width: 0;
+}
+
+.singers .arijit img {
+    height: 150px;
+    width: 150px;
+    border-radius: 20px;
+}
+
+.singers .arijit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(12, 11, 11, 0.615);
+    height: 200px;
+    width: 200px;
+    border-radius: 20px;
+}
+
+.name p {
+    font-size: 30px;
+    font-family: sans-serif;
+    font-weight: 100;
+    color: white;
+    text-align: center;
     margin-top: 100px;
 }
