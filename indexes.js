@@ -4,6 +4,35 @@ document.querySelector('.navbar-toggle').addEventListener('click', function() {
 });
 
 
+
+//  singers array
+
+var singerarr = [{
+        src: "https://wallpapers.com/images/hd/renowned-indian-singer-arijit-singh-1gy48cxqhvzvanzd.jpg",
+    },
+    {
+        src: "https://th.bing.com/th/id/OIP.zSH88V28gL5eKuF2EKaDwQAAAA?rs=1&pid=ImgDetMain",
+    },
+    {
+        src: "https://th.bing.com/th/id/R.f4c123d3453e3e4da70d3cf9681591d3?rik=3Ge6NMtI%2fNUmZA&riu=http%3a%2f%2fwww.causticnews.com%2fwp-content%2fuploads%2f2017%2f12%2fgrd-768x494.png&ehk=mKE5NLXOX6F1LCPEjUjg7eOFHkVnK3vBSHLu1YA3CtY%3d&risl=&pid=ImgRaw&r=0",
+    },
+    {
+        src: "https://images.mid-day.com/images/images/2022/oct/Armaan-Print_d.jpg",
+    },
+    {
+        src: "https://www.iwmbuzz.com/wp-content/uploads/2021/02/jubin-nautiyals-5-best-on-stage-moments.jpg",
+    },
+    {
+        src: "https://2.bp.blogspot.com/-dYRZ96uOD6k/VZFTYRvge9I/AAAAAAAA1fE/hjXayY7YQFA/s1600/62nd_filmfare_awards_event_stills%2B%252885%2529.jpg",
+    },
+    {
+        src: "https://th.bing.com/th/id/OIP.5BmTbjD4VtgeN1Izdg843wHaHa?rs=1&pid=ImgDetMain",
+    },
+    {
+        src: "https://wallpapercave.com/wp/wp7498130.jpg",
+    },
+];
+
 // array of playlist
 
 let playlist = [{
@@ -228,6 +257,20 @@ let playlist = [{
 ];
 
 
+
+
+
+// function singer(){
+//     let divsinger=``;
+//     for( let i=0;i<singerarr.length;i++){
+//         divsinger=divsinger+`
+
+
+//         `
+//     };
+//     document.getElementById("singers").innerHTML=divsinger;
+// }
+// singer();
 
 // multilpe
 
