@@ -10,11 +10,11 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #FFBAE7;
+    background-color: rgba(35, 35, 35, 0.959);
 }
 
 .navbar {
-    background-color: #F96DAA;
+    background-color: rgba(0, 0, 0, 0.581);
     color: white;
     display: flex;
     justify-content: space-between;
@@ -24,11 +24,13 @@ body {
     font-family: sans-serif;
     font-weight: 100;
     color: #02D0FF;
+    transition: all 0.75s ease-in-out;
 }
 
 .navbar-logo {
     display: flex;
     align-items: center;
+    color: red;
 }
 
 .navbar-logo img {
@@ -47,15 +49,18 @@ body {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    transition: all 0.75s ease-in-out;
 }
 
 .navbar-links li {
     margin-right: 20px;
+    transition: all 0.75s ease-in-out;
 }
 
 .navbar-toggle {
     display: none;
-    color: black;
+    color: white;
+    transition: all 0.75s ease-in-out;
 }
 
 @media (max-width: 768px) {
@@ -104,12 +109,14 @@ body {
     font-size: 15px;
     font-family: sans-serif;
     font-weight: 300;
+    background-color: black;
+    color: white;
 }
 
 .container .searchbar button {
     height: 50px;
     width: 100px;
-    background-color: #F96DAA;
+    background-color: rgb(81, 78, 78);
     border: none;
     border-radius: 20px;
     font-size: 20px;
@@ -132,7 +139,7 @@ body {
 .musiccard {
     height: 300px;
     width: 270px;
-    background-color: #F96DAA;
+    background-color: black;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -176,19 +183,24 @@ audio {
 }
 
 .footer {
-    height: 300px;
+    height: 100%;
     width: 100%;
-    background-color: #F96DAA;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-color: black;
     margin-top: 100px;
 }
 
-.footer .footercard {
-    font-size: 20px;
-    font-family: sans-serif;
-    font-weight: 100;
-    color: #FFBAE7;
-    text-shadow: 0px 0px 10px black;
+.footer .footercards li {
+    background-color: #F96DAA;
+}
+
+.footer .image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.footer .image img {
+    height: 200px;
+    margin-top: 100px;
 }
