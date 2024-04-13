@@ -192,7 +192,7 @@
         <ul class="navbar-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="arijit.html">Singers</a></li>
-            <li><a href="ab">About</a></li>
+            <li><a href="about.html">About</a></li>
             <li><a href="contact.html">Contacts</a></li>
         </ul>
     </div>
@@ -232,6 +232,14 @@
     </div>
     </div>
     <script>
+        // Navbar script
+        document.querySelector('.navbar-toggle').addEventListener('click', function() {
+            document.querySelector('.navbar-links').classList.toggle('active');
+        });
+
+
+
+
         document.getElementById('registration-form').addEventListener('submit', function(event) {
             event.preventDefault(); // Prevent the form from submitting
 
