@@ -9,11 +9,98 @@
 <style>
     * {
         color: white;
-        font-size: 25px;
+        font-size: 20px;
         font-family: sans-serif;
         font-weight: 100;
         color: white;
-        line-height: 40px;
+        text-decoration: none;
+    }
+    
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background-color: rgba(35, 35, 35, 0.959);
+    }
+    
+    .navbar {
+        background-color: rgba(0, 0, 0, 0.581);
+        color: blue;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        font-size: 25px;
+        font-family: sans-serif;
+        font-weight: 100;
+        color: #02D0FF;
+        transition: all 0.75s ease-in-out;
+    }
+    
+    .navbar-logo {
+        display: flex;
+        align-items: center;
+        color: red;
+    }
+    
+    .navbar-logo img {
+        width: 100px;
+        height: 100px;
+        margin-right: 10px;
+    }
+    
+    .navbar-logo span {
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+    
+    .navbar-links {
+        display: flex;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        transition: all 0.75s ease-in-out;
+    }
+    
+    .navbar-links li {
+        margin-right: 20px;
+        transition: all 0.75s ease-in-out;
+    }
+    
+    .navbar-toggle {
+        display: none;
+        color: white;
+        transition: all 0.75s ease-in-out;
+    }
+    
+    @media (max-width: 768px) {
+        .navbar {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .navbar-links {
+            display: none;
+            width: 100%;
+            flex-direction: column;
+            align-items: center;
+        }
+        .navbar-links.active {
+            display: flex;
+        }
+        .navbar-links li {
+            margin-right: 0;
+            margin-bottom: 10px;
+        }
+        .navbar-links a {
+            color: #FEFF00;
+        }
+        .navbar-toggle {
+            display: block;
+            font-size: 1.5rem;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
     }
     
     body {
@@ -64,6 +151,7 @@
         background-repeat: no-repeat;
         padding: 50px 0;
         text-align: center;
+        line-height: 30px;
     }
     
     section.about::-webkit-scrollbar {
@@ -99,16 +187,19 @@
 </style>
 
 <body>
-    <header>
-        <div class="container">
-            <h1>Omnify</h1>
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="about.html" class="active">About</a>
-                <a href="contact.html">Contact</a>
-            </nav>
+    <div class="navbar">
+        <div class="navbar-logo">
+            <img src="https://www.electrofed.com/wp-content/uploads/2021/12/Omnify_Logo_Final-1024x718.png" alt="Logo">
+            <span>Omnify.music.india</span>
         </div>
-    </header>
+        <div class="navbar-toggle">&#9776;</div>
+        <ul class="navbar-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="arijit.html">Singers</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contacts</a></li>
+        </ul>
+    </div>
     <section class="about">
         <div class="container">
 
@@ -132,7 +223,12 @@
         </div>
     </div>
     </div>
-    <script src="script.js"></script>
+    <script>
+        // Navbar script
+        document.querySelector('.navbar-toggle').addEventListener('click', function() {
+            document.querySelector('.navbar-links').classList.toggle('active');
+        });
+    </script>
 </body>
 
 </html>
