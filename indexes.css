@@ -268,11 +268,43 @@ audio {
     border-radius: 20px;
 }
 
-.name p {
-    font-size: 30px;
+#b {
+    height: 30px;
+    width: 100px;
+    border-radius: 10px;
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: 20px;
     font-family: sans-serif;
     font-weight: 100;
-    color: white;
-    text-align: center;
+    margin-left: 40%;
     margin-top: 100px;
+}
+
+.details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.details p {
+    padding: 40px;
+    background-image: url(https://www.electrofed.com/wp-content/uploads/2021/12/Omnify_Logo_Final-1024x718.png);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 90%;
+    background-color: black;
+    text-align: center;
+    color: yellow;
+    margin-top: 30px;
+    display: none;
+}
+
+button:focus~.details p {
+    display: block;
 }
